@@ -1,1 +1,1 @@
-console.log('From index.js');
+const CAKE_ORDERED = 'CAKE_ORDERED';
