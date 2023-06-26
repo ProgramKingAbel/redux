@@ -12,7 +12,12 @@ const orderCake = () => {
     }
 }
 
-
+const restockCake = (qty=1) => {
+    return {
+        type: CAKE_RESTOCKED,
+        quantity: qty,
+    }
+}
 
 const initialState = {
     numOfCakes: 10,
