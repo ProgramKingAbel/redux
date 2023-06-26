@@ -1,5 +1,6 @@
 const redux = require('redux');
 const createStore = redux.createStore;
+const produce = require('immer').produce;
 
 const initialState = {
     name: 'Abel',
