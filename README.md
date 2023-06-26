@@ -1,1 +1,1 @@
-# redux
+# Pure redux
