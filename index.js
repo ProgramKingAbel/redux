@@ -13,3 +13,14 @@ const initialState = {
 }
 
 // (previousState, action) => newState; ----------reducers
+
+const reducer = (state = initialState, action) => {
+    switch (action.type) {
+        case CAKE_ORDERED:
+            return {
+                numOfCakes: state.numOfCakes - 1,
+            }
+        default:
+            return state;
+    }
+}
