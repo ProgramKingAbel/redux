@@ -32,3 +32,6 @@ const store = createStore(reducer);
 console.log('Initial state', store.getState())
 
 store.subscribe(() => console.log('updated state', store.getState()));
+store.dispatch(orderCake());
+store.dispatch(orderCake());
+store.dispatch(orderCake());
