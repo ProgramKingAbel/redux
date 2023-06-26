@@ -2,6 +2,7 @@ const redux = require('redux');
 const createStore = redux.createStore;
 
 const CAKE_ORDERED = 'CAKE_ORDERED';
+const CAKE_RESTOCKED = 'CAKE_RESTOCKED';
 
 const orderCake = () => {
 
@@ -10,6 +11,8 @@ const orderCake = () => {
         quantity: 1,
     }
 }
+
+
 
 const initialState = {
     numOfCakes: 10,
