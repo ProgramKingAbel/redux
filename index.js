@@ -79,6 +79,12 @@ const IceCreamReducer = (state = initialIceCreamState, action) => {
             return state;
     }
 }
+//create root reby combining reducers
+
+const rootReducer = combineReducers({
+    cake: cakeReducer,
+    iceCream: IceCreamReducer
+});
 
 const store = createStore(reducer);
 console.log('Initial state', store.getState())
