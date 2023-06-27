@@ -1,8 +1,10 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+
 
 export const IcecreamView = () => {
     const numOfIceCreams = useSelector((state) => state.icecream.numOfIceCreams)
+    const dispatch = useDispatch();
   return (
     <div>
           <h2>Number of Ice creams - { numOfIceCreams }</h2>
