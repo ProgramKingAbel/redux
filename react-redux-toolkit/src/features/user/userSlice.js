@@ -9,7 +9,7 @@ const initialState = {
 
 //Generates pending, fullfilled and rejected action types
 
-const fetchUsers = createAsyncThunk('user/fetchUsers', () => {
+export const fetchUsers = createAsyncThunk('user/fetchUsers', () => {
    return axios.get('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.data.map((user) => user.id))
 })
@@ -36,4 +36,3 @@ const userSlice = createSlice({
 });
 
 export default userSlice.reducer;
-module.exports.fetchUsers = fetchUsers;
