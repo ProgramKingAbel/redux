@@ -19,4 +19,4 @@ store.dispatch(fetchUsers());
 // store.dispatch(icecreamActions.ordered())
 // store.dispatch(icecreamActions.restocked(2))
 
-unsubscribe()
+// unsubscribe()
