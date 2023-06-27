@@ -14,5 +14,5 @@ const cakeSlice = createSlice({
     }
 })
 
-module.exports = cakeSlice.reducer
+export default cakeSlice.reducer
 module.exports.cakeActions = cakeSlice.actions

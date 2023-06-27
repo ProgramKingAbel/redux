@@ -35,5 +35,5 @@ const userSlice = createSlice({
     }
 });
 
-module.exports = userSlice.reducer;
+export default userSlice.reducer;
 module.exports.fetchUsers = fetchUsers;
