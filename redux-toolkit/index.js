@@ -9,6 +9,6 @@ const unsubscribe = store.subscribe(() => {
 store.dispatch(cakeActions.ordered())
 store.dispatch(cakeActions.ordered())
 store.dispatch(cakeActions.ordered())
-store.dispatch(cakeActions.restoked(3))
+store.dispatch(cakeActions.restocked(3))
 
 unsubscribe()
